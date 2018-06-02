@@ -13,11 +13,6 @@ module.exports = (app) => {
   // Create a new cocktail
   app.post('/api/cocktails/create', cocktails.create);
 
-  // Get all cocktails
-  //app.get('/api/cocktails/getAll', cocktails.getAll);
-
-
-
   // ======================================== //
   //         Routes about ingredients         //
   //========================================= //
