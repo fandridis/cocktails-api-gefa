@@ -5,12 +5,12 @@ exports.create = async function(req, res) {
     console.log('req.body @ create @ ingredient.controller: ', req.body);
 
     // Save the parameters passed from frontend
-    let ingredient = req.body.ingredient;
+    let {name, type, alcoholPercentage} = req.body;
 
     let ingredientToSave = new Ingredient({
-        name: ingredient.ingredientName,
-        alcoholPercentage: ingredient.ingredientAlcoholPercentage,
-        type: ingredient.ingredientType
+        name: name,
+        alcoholPercentage: alcoholPercentage,
+        type: type
     });
 
     console.log('ingredientToSave: ', ingredientToSave);

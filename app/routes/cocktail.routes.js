@@ -1,5 +1,3 @@
-var {authenticate} = require('./../middleware/authenticate');
-
 
 module.exports = (app) => {
 
