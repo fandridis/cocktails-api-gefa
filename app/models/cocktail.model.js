@@ -9,16 +9,18 @@ let CocktailSchema = new mongoose.Schema({
     //    minlength: 1,
     //    trim: true
     },
-
+    description: String,
+    howTo: String,
+    isAlcoholic: Boolean,
+    strength: String,
+    time: String,
+    baseSpirit: String,
     ingredients: [{
         ingredientObjId: { type: ObjectIdType, ref: 'ingredients' },
+        ingredientName: String,
         quantity: Number,
         quantityType: String    // ml, oz, grams, pieces
     }],    
-    isAlcoholic: {
-        type: Boolean       
-    },
-    howTo: String
   });
 
 

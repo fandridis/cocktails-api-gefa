@@ -7,13 +7,15 @@ let IngredientSchema = new mongoose.Schema({
     //    minlength: 1,
     //    trim: true
     },
+    description: {
+        type: String
+    },
     alcoholPercentage: {
-        type: Number,           // Tournament status: 'draft', 'running', 'completed'   
+        type: Number,             
         default: 0
     },
     type: {
-        type: String,       // Spirit, Juice, Food, Other
-        default: null
+        type: String,       // spirit, juice, herb, other
     }
   });
 

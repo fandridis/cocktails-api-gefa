@@ -2,18 +2,12 @@ const {Cocktail} = require('../models/cocktail.model');
 const utilities = require('../utilities/utilities');
 
 exports.create = async function(req, res) {
-    console.log('req.body @ create @ tournament.controller: ', req.body);
+    console.log('req.body @ create @ cocktail.controller: ', req.body);
    // console.log('req.user @ create @ tournament.controller: ', req.user);
 
     // Save the parameters passed from frontend
     let { cocktail } = req.body;
-
-    let cocktailToSave = new Cocktail({
-        name: cocktail.cocktailName,
-        isAlcoholic: cocktail.cocktailIsAlcoholic,
-        ingredients: cocktail.cocktailIngredients,
-        howTo: cocktail.cocktailHowTo
-    });
+    let cocktailToSave = new Cocktail(cocktail);
 
     cocktailToSave.save()
     .then((theCocktail) => {

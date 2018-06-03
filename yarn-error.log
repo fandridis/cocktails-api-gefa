@@ -1,0 +1,65 @@
+Arguments: 
+  /Users/georgiosfandridis/.nvm/versions/node/v8.9.1/bin/node /Users/georgiosfandridis/.nvm/versions/node/v8.9.1/bin/yarn add @blueprintjs/core
+
+PATH: 
+  /Users/georgiosfandridis/.nvm/versions/node/v8.9.1/bin:/Users/georgiosfandridis/anaconda3/bin:/Users/georgiosfandridis/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.9.1
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "cocktails-api-gefa",
+    "version": "0.0.0",
+    "private": true,
+    "engines": {
+      "node": "8.11.1",
+      "npm": "5.5.1"
+    },
+    "scripts": {
+      "start": "node index.js",
+      "dev": "nodemon index.js"
+    },
+    "dependencies": {
+      "aws-sdk": "^2.218.1",
+      "bluebird": "^3.5.1",
+      "body-parser": "^1.18.2",
+      "cookie-parser": "~1.4.3",
+      "cookie-session": "^2.0.0-beta.3",
+      "cors": "^2.8.4",
+      "debug": "~2.6.9",
+      "dotenv": "^5.0.1",
+      "express": "~4.16.0",
+      "http-errors": "~1.6.2",
+      "jade": "~1.11.0",
+      "lodash": "^4.17.10",
+      "mongoose": "^5.0.12",
+      "morgan": "~1.9.0",
+      "nodemon": "^1.17.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Found incompatible module
+      at new MessageError (/Users/georgiosfandridis/.nvm/versions/node/v8.9.1/lib/node_modules/yarn/lib/cli.js:186:110)
+      at Object.checkOne (/Users/georgiosfandridis/.nvm/versions/node/v8.9.1/lib/node_modules/yarn/lib/cli.js:62444:11)
+      at /Users/georgiosfandridis/.nvm/versions/node/v8.9.1/lib/node_modules/yarn/lib/cli.js:22773:75
+      at Generator.next (<anonymous>)
+      at step (/Users/georgiosfandridis/.nvm/versions/node/v8.9.1/lib/node_modules/yarn/lib/cli.js:98:30)
+      at /Users/georgiosfandridis/.nvm/versions/node/v8.9.1/lib/node_modules/yarn/lib/cli.js:116:14
+      at new Promise (<anonymous>)
+      at new F (/Users/georgiosfandridis/.nvm/versions/node/v8.9.1/lib/node_modules/yarn/lib/cli.js:23451:28)
+      at /Users/georgiosfandridis/.nvm/versions/node/v8.9.1/lib/node_modules/yarn/lib/cli.js:95:12
+      at /Users/georgiosfandridis/.nvm/versions/node/v8.9.1/lib/node_modules/yarn/lib/cli.js:22777:27
