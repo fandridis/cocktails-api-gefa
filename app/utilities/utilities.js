@@ -28,7 +28,6 @@ exports.randomIntBetween = (min,max) => {
 // Input 2: Property name
 // Input 3: Property value
 // Output:  The first element matched or FALSE
-
 exports.findElement = (arrayOfObjects, propertyName, propertyValue) => {
   let arrayLength = arrayOfObjects.length;
   

@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/georgiosfandridis/.nvm/versions/node/v8.9.1/bin/node /Users/georgiosfandridis/.nvm/versions/node/v8.9.1/bin/yarn add @blueprintjs/core
+  /Users/georgiosfandridis/.nvm/versions/node/v8.9.1/bin/node /Users/georgiosfandridis/.nvm/versions/node/v8.9.1/bin/yarn add azure-storage --save
 
 PATH: 
   /Users/georgiosfandridis/.nvm/versions/node/v8.9.1/bin:/Users/georgiosfandridis/anaconda3/bin:/Users/georgiosfandridis/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
