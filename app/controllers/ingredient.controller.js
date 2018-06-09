@@ -27,8 +27,8 @@ exports.create = async function(req, res) {
 
 exports.getAll = function(req, res) {
     console.log('req.body @ getAll @ ingredient.controller: ', req.body);
-    
-    Ingredient.find({})
+
+    Ingredient.find().sort({ name: 1 })
     .then((theIngredients) => {
         console.log('Found the ingredients: ', theIngredients)
         res.send({theIngredients});

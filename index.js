@@ -7,13 +7,16 @@ const cookieParser = require('cookie-parser');
 const cookieSession = require('cookie-session');
 const logger = require('morgan');
 
+const fs = require('fs');
+const busboy = require('connect-busboy');
+
 // Require environment variables
 require('dotenv').config();
 
 const mongoose = require('mongoose');
 
 // Create express app
-var app = express();
+const app = express();
 
 // app.use defines middlewares that requests pass through first
 // before they are sent out in different route handlers
@@ -26,6 +29,9 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 // parse application/json
 app.use(bodyParser.json())
+
+// for file upload
+app.use(busboy()); 
 
 // calling cookie session and passing a configuration object
 // 1: how long will the cookie last (30 days in ms)
@@ -63,7 +69,6 @@ mongoose.connection.once('open', function() {
 
 // Cocktail routes
 require('./app/routes/cocktail.routes.js')(app);
-
 
 //
 if (process.env.PORT) {
