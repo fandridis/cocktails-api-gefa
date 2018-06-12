@@ -30,7 +30,7 @@ exports.getAll = function(req, res) {
 
     Ingredient.find().sort({ name: 1 })
     .then((theIngredients) => {
-        console.log('Found the ingredients: ', theIngredients)
+       // console.log('Found the ingredients: ', theIngredients)
         res.send({theIngredients});
     })
     .catch((err) => {

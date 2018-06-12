@@ -8,7 +8,6 @@ const cookieSession = require('cookie-session');
 const logger = require('morgan');
 
 const fs = require('fs');
-const busboy = require('connect-busboy');
 
 // Require environment variables
 require('dotenv').config();
@@ -29,9 +28,6 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 // parse application/json
 app.use(bodyParser.json())
-
-// for file upload
-app.use(busboy()); 
 
 // calling cookie session and passing a configuration object
 // 1: how long will the cookie last (30 days in ms)
