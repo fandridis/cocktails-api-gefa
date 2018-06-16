@@ -102,7 +102,6 @@ exports.uploadImage = async function (req, res) {
       });
     }
   }))
-
 };
 
 const createContainer = (blobService, containerName) => {

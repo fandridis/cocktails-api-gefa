@@ -15,7 +15,7 @@ module.exports = (app) => {
   app.post('/api/cocktails/create', cocktails.create);
 
   // Get all cocktails
-  app.post('/api/cocktails/getall', cocktails.getAll);
+  app.get('/api/cocktails/getall', cocktails.getAll);
 
   // Upload a cocktail image
   app.post('/api/cocktails/uploadimage', upload.single('file'), cocktails.uploadImage);
