@@ -28,6 +28,7 @@ exports.getAll = async function(req, res) {
   catch (err) {
     res.status(400).send(err);
   }
+}
 
 
 exports.uploadImage = async function (req, res) {
