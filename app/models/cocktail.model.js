@@ -33,7 +33,13 @@ CocktailSchema.statics.save = function (cocktail) {
   return cocktailToSave.save();
 };
 
-// Add blob image to cocktail
+// Get all cocktails
+CocktailSchema.statics.getAll = function () {
+
+  return Ingredient.find().sort({ name: 1 })
+};
+
+// Add a link to the blob image to cocktail
 CocktailSchema.statics.addImageLink = function (cocktailId, imageLink) {
   console.log(`Adding the imageLink ${imageLink} to cocktail with id ${cocktailId}`);
 
