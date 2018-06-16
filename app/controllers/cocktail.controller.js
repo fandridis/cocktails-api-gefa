@@ -84,23 +84,11 @@ exports.uploadImage = async function (req, res) {
         }
         catch (error) {
           console.log('Removing file failed!');
-          // decide whether to delete from blob again as well as from the driveFiles collection...
+          // decide whether to delete from blob again as well as from collection
         }
       });
     }
   }))
-  /*
-  blobService.createContainerIfNotExists(driveId, function (error, result, response) {
-      if (!error) {
-        // Container exists and is private
-        var stream = fs.createReadStream(uploadPath + path.sep + fileInfo.filename);
-        const options = {};
-        stream.pipe(blobSvc.createWriteStreamToBlockBlob(driveId, hash, options, function(error, result, response) {
-          if (error) {
-            // remove from DB, send msg to support!
-            // res.send({ error: error }).end();
-          }
-          else {*/
 
 };
 
