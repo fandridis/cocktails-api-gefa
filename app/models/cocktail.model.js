@@ -35,8 +35,7 @@ CocktailSchema.statics.save = function (cocktail) {
 
 // Get all cocktails
 CocktailSchema.statics.getAll = function () {
-
-  return Ingredient.find().sort({ name: 1 })
+  return Cocktail.find().sort({ name: 1 })
 };
 
 // Add a link to the blob image to cocktail

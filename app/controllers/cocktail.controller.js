@@ -20,10 +20,9 @@ exports.create = async function (req, res) {
 
 exports.getAll = async function(req, res) {
   console.log('req.body @ getAll @ cocktail.controller: ', req.body);
-
   try {
     let theCocktails = await Cocktail.getAll();
-    res.send({theCocktails});
+    res.send({ theCocktails });
   }
   catch (err) {
     res.status(400).send(err);
