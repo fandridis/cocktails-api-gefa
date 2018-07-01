@@ -10,9 +10,11 @@ let CocktailSchema = new mongoose.Schema({
     //    trim: true
   },
   description: String,
+  shortDescription: String,
   howTo: String,
   isAlcoholic: Boolean,
   strength: String,
+  color: String,
   time: String,
   baseSpirit: String,
   imageLink: String,          // Reference to blob
